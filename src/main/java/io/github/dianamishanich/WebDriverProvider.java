@@ -16,7 +16,7 @@ public class WebDriverProvider implements Supplier<WebDriver> {
     public WebDriver get() {
         final WebDriverConfig config = ConfigFactory.newInstance().create(WebDriverConfig.class);
         if (config.remote()) {
-            return new RemoteWebDriver(config.remoteURL(), DesiredCapabilities.
+            return new RemoteWebDriver(config.remoteURL(), DesiredCapabilities.htmlUnit());
 
         } else {
             switch (config.browserName()) {

@@ -2,6 +2,9 @@ package io.github.dianamishanich;
 import org.aeonbits.owner.Config;
 import java.net.URL;
 
+@Config.Sources({
+        "classpath:default.properties"
+})
 public interface WebDriverConfig extends Config {
 
     @DefaultValue("false")
