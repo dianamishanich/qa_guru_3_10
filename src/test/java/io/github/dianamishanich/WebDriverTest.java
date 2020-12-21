@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 public class WebDriverTest {
 
@@ -13,8 +14,8 @@ public class WebDriverTest {
 
     @BeforeEach
     public void initDriver(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        WebDriverManager.operadriver().setup();
+        driver = new OperaDriver();
     }
 
     @Test
