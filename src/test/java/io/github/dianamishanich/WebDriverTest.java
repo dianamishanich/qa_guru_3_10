@@ -14,9 +14,9 @@ public class WebDriverTest {
 
     @BeforeEach
     public void initDriver(){
-        WebDriverManager.operadriver().setup();
-        driver = new OperaDriver();
+        driver = new WebDriverProvider().get();
     }
+
 
     @Test
     public void GoogleTest() {

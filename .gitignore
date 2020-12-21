@@ -38,7 +38,6 @@ target/
 /gradlew
 /gradlew.bat
 .todo
-*.properties
 /.idea/
 /.gradle/
 /gradle/
